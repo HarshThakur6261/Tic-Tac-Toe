@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100svh;
+    width: 100vw;
+    background-color: #548687;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+     /* justify-content: center;
+     align-items: center; */
+
+}
+header{
+    margin: 3rem;
+}
+h1{
+    font-size: 3rem;
+}
+/* By default, a flex item (such as .game-container) will stretch to fit the parent container’s width but will only take up as much height as its content needs unless otherwise specified. */
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    gap: 0.5rem;   
+    margin-bottom: 2rem;
+    place-items: center;
+    
+}
+
+.game-button{
+    height: 9rem;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: black;
+    font-size:4rem;
+}
+
+#footer-button{
+  
+    width: 8rem;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+.msg-container{
+    font-size: 4rem;
+    color: yellow;
+}
+#new_game{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
